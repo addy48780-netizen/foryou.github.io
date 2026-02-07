@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#ff4e78,#ff9a9e);
+    overflow:hidden;
+}
+
+/* Container */
+.container{
+    text-align:center;
+    color:white;
+    z-index:10;
+}
+
+h1{
+    font-size:55px;
+    margin-bottom:10px;
+    text-shadow:0 0 20px rgba(255,255,255,0.7);
+}
+
+.typing{
+    font-size:24px;
+    height:30px;
+    margin-bottom:20px;
+}
+
+/* Teddy */
+.teddy{
+    width:220px;
+    border-radius:20px;
+    box-shadow:0 0 30px rgba(255,255,255,0.6);
+    transition:0.4s;
+}
+
+.teddy:hover{
+    transform:scale(1.1) rotate(3deg);
+}
+
+/* Button */
+button{
+    margin-top:25px;
+    padding:14px 35px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    color:#ff4e78;
+    background:white;
+    transition:0.4s;
+    box-shadow:0 0 20px rgba(255,255,255,0.8);
+}
+
+button:hover{
+    background:#ff4e78;
+    color:white;
+    transform:scale(1.1);
+}
+
+/* Floating Hearts */
+
+.hearts span{
+    position:absolute;
+    bottom:-50px;
+    font-size:25px;
+    animation: float 10s linear infinite;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-120vh);
+        opacity:0;
+    }
+}
